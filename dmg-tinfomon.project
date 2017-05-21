@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="dmg-tinfomon" InternalType="" Version="10.0.0">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "Release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="tmp">
+      <VirtualDirectory Name="dmg-tinfomon">
+        <VirtualDirectory Name="test">
+          <VirtualDirectory Name="xbee">
+            <VirtualDirectory Name="coordinator">
+              <File Name="src/tmp/dmg-tinfomon/test/xbee/coordinator/Makefile"/>
+              <File Name="src/tmp/dmg-tinfomon/test/xbee/coordinator/xbee_coordinator_test.c"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="node">
+              <File Name="src/tmp/dmg-tinfomon/test/xbee/node/xbee_node_test.c"/>
+              <File Name="src/tmp/dmg-tinfomon/test/xbee/node/Makefile"/>
+            </VirtualDirectory>
+            <File Name="src/tmp/dmg-tinfomon/test/xbee/Makefile"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="iaq">
+            <File Name="src/tmp/dmg-tinfomon/test/iaq/iaq_test.c"/>
+            <File Name="src/tmp/dmg-tinfomon/test/iaq/Makefile"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="serial">
+            <File Name="src/tmp/dmg-tinfomon/test/serial/serial_test.c"/>
+            <File Name="src/tmp/dmg-tinfomon/test/serial/Makefile"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="eeprom">
+            <File Name="src/tmp/dmg-tinfomon/test/eeprom/eeprom_test.c"/>
+            <File Name="src/tmp/dmg-tinfomon/test/eeprom/Makefile"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="led">
+            <File Name="src/tmp/dmg-tinfomon/test/led/Makefile"/>
+            <File Name="src/tmp/dmg-tinfomon/test/led/led_test.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="button">
+            <File Name="src/tmp/dmg-tinfomon/test/button/Makefile"/>
+            <File Name="src/tmp/dmg-tinfomon/test/button/button_test.c"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="switch">
+            <File Name="src/tmp/dmg-tinfomon/test/switch/switch_test.c"/>
+            <File Name="src/tmp/dmg-tinfomon/test/switch/Makefile"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="rs485">
+            <File Name="src/tmp/dmg-tinfomon/test/rs485/Makefile"/>
+            <File Name="src/tmp/dmg-tinfomon/test/rs485/rs485_test.c"/>
+          </VirtualDirectory>
+          <File Name="src/tmp/dmg-tinfomon/test/Makefile"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="src">
+          <File Name="src/tmp/dmg-tinfomon/src/device-config.c"/>
+          <File Name="src/tmp/dmg-tinfomon/src/main.c"/>
+          <File Name="src/tmp/dmg-tinfomon/src/ui.c"/>
+          <File Name="src/tmp/dmg-tinfomon/src/device.c"/>
+          <File Name="src/tmp/dmg-tinfomon/src/sensor.c"/>
+          <File Name="src/tmp/dmg-tinfomon/src/dmg-tinfomon.h"/>
+        </VirtualDirectory>
+        <File Name="src/tmp/dmg-tinfomon/dmg-tinfomon-daemon.c"/>
+        <File Name="src/tmp/dmg-tinfomon/NOTICE"/>
+        <File Name="src/tmp/dmg-tinfomon/config.h"/>
+        <File Name="src/tmp/dmg-tinfomon/AUTHORS"/>
+        <File Name="src/tmp/dmg-tinfomon/Makefile"/>
+        <File Name="src/tmp/dmg-tinfomon/dmg-tinfomon.c"/>
+        <File Name="src/tmp/dmg-tinfomon/README"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <File Name="src/device-config.c"/>
+    <File Name="src/tinfomon.c"/>
+    <File Name="src/main.c"/>
+    <File Name="src/dmg-tinfomon.h"/>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/dmg-tinfomon" IntermediateDirectory="." Command="$(IntermediateDirectory)/dmg-tinfomon" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <Target Name="DistClean">make distclean</Target>
+        <RebuildCommand>make rebuild DEBUG=ON</RebuildCommand>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make all DEBUG=ON</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand>make $(CurrentFileName).o DEBUG=ON</SingleFileCommand>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(ProjectPath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="dmg-tinfomon" IntermediateDirectory="." Command="$(IntermediateDirectory)/dmg-tinfomon" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <Target Name="DistClean">make distclean</Target>
+        <RebuildCommand>make rebuild</RebuildCommand>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand>make $(CurrentFileName).o</SingleFileCommand>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(ProjectPath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="domogik-tinfomon">
+    <File Name="LICENSE"/>
+    <File Name="config.h"/>
+    <File Name="AUTHORS"/>
+    <File Name="Makefile"/>
+    <File Name="dmg-tinfomon.c"/>
+    <File Name="LICENCE"/>
+    <File Name=".gitignore"/>
+  </VirtualDirectory>
+</CodeLite_Project>
