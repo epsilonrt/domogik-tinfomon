@@ -20,9 +20,9 @@ extern "C" {
 #endif
 
 /* constants ================================================================ */
-#define XPL_TINFOMON_VENDOR_ID       "domogik"
+#define XPL_TINFOMON_VENDOR_ID       "epsirt"
 #define XPL_TINFOMON_DEVICE_ID       "tinfomon"
-#define XPL_TINFOMON_CONFIG_FILENAME "domogik-tinfomon.xpl"
+#define XPL_TINFOMON_CONFIG_FILENAME XPL_TINFOMON_VENDOR_ID "-" XPL_TINFOMON_DEVICE_ID ".xpl"
 #define XPL_TINFOMON_INSTANCE_ID     NULL // NULL for auto instance
 #define XPL_TINFOMON_DEVICE_VERSION  VERSION_SHORT // VERSION_SHORT is automatically defined in version-git.h from git describe
 #define XPL_TINFOMON_LOG_LEVEL       LOG_INFO
